@@ -1,0 +1,124 @@
+// Place your key bindings in this file to override the defaults
+[
+	// cursor move
+	{
+		// move down
+		"key": "alt+k",
+		"command": "cursorDown",
+		"when": "editorTextFocus"
+	},
+	{
+		// move up
+		"key": "alt+i",
+		"command": "cursorUp",
+		"when": "editorTextFocus"
+	},
+	{
+		// move right
+		"key": "alt+l",
+		"command": "cursorRight",
+		"when": "editorTextFocus"
+	},
+	{
+		// move left
+		"key": "alt+j",
+		"command": "cursorLeft",
+		"when": "editorTextFocus"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// jump to first of the line
+		"key": "alt+u",
+		"command": "cursorHome",
+		"when": "textInputFocus"
+	},
+	{
+		// jump to end of the line
+		"key": "alt+o",
+		"command": "cursorEnd",
+		"when": "textInputFocus"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// move line up
+		"key": "ctrl+shift+i",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		// move line down
+		"key": "ctrl+shift+k",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// delete right
+		"key": "alt+backspace",
+		"command": "deleteRight",
+		"when": "textInputFocus"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// scroll down
+		"key": "ctrl+k",
+		"command": "scrollLineDown",
+		"when": "textInputFocus"
+	},
+	{
+		// scroll up
+		"key": "ctrl+i",
+		"command": "scrollLineUp",
+		"when": "textInputFocus"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// right select
+		"key": "shift+alt+l",
+		"command": "cursorRightSelect",
+		"when": "textInputFocus"
+	},
+	{
+		// left select
+		"key": "shift+alt+j",
+		"command": "cursorLeftSelect",
+		"when": "textInputFocus"
+	},
+	{
+		// up select
+		"key": "shift+alt+i",
+		"command": "cursorUpSelect",
+		"when": "editorTextFocus"
+	},
+	{
+		// down select
+		"key": "shift+alt+k",
+		"command": "cursorDownSelect",
+		"when": "editorTextFocus"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// copy line make new line
+		"key": "alt+n",
+		"command": "editor.action.copyLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	/////////////////////////////////////////////////////////////////////////////////////
+	{
+		// new line below
+		"key": "alt+m",
+		"command": "editor.action.insertLineAfter",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		// new line above
+		"key": "shift+alt+m",
+		"command": "editor.action.insertLineBefore",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+d",
+		"command": "deleteLeft",
+		"when": "textInputFocus"
+	}
+]

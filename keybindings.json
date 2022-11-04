@@ -117,8 +117,38 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
+		// delete left
 		"key": "alt+d",
 		"command": "deleteLeft",
 		"when": "textInputFocus"
+	},
+	{
+		// move to first
+		"key": "shift+alt+u",
+		"command": "cursorHomeSelect",
+		"when": "textInputFocus"
+	},
+	{
+		// move to end
+		"key": "shift+alt+o",
+		"command": "cursorEndSelect",
+		"when": "textInputFocus"
+	},
+	{
+		// move though words right
+		"key": "alt+0",
+		"command": "cursorWordEndRight",
+		"when": "textInputFocus"
+	},
+	{
+		// move though words left
+		"key": "alt+9",
+		"command": "cursorWordLeft",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+alt+,",
+		"command": "workbench.action.debug.run",
+		"when": "debuggersAvailable && debugState != 'initializing'"
 	}
 ]

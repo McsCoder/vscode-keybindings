@@ -168,15 +168,29 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
+    // Select next in quick open
     "key": "alt+k",
     "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen",
+    "when": "inQuickOpen"
   },
   {
+    // Select previous in quick open
     "key": "alt+i",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // Open next open file in editor
+    "key": "alt+.",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    // Open previous open file in editor
+    "key": "alt+,",
+    "command": "workbench.action.previousEditor"
   },
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
@@ -246,6 +260,5 @@
     "key": "alt+q",
     "command": "editor.action.organizeImports",
     "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
-  },
-
+  }
 ]

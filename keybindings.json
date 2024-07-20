@@ -1,154 +1,251 @@
 // Place your key bindings in this file to override the defaults
 [
-	// cursor move
-	{
-		// move down
-		"key": "alt+k",
-		"command": "cursorDown",
-		"when": "editorTextFocus"
-	},
-	{
-		// move up
-		"key": "alt+i",
-		"command": "cursorUp",
-		"when": "editorTextFocus"
-	},
-	{
-		// move right
-		"key": "alt+l",
-		"command": "cursorRight",
-		"when": "editorTextFocus"
-	},
-	{
-		// move left
-		"key": "alt+j",
-		"command": "cursorLeft",
-		"when": "editorTextFocus"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// jump to first of the line
-		"key": "alt+u",
-		"command": "cursorHome",
-		"when": "textInputFocus"
-	},
-	{
-		// jump to end of the line
-		"key": "alt+o",
-		"command": "cursorEnd",
-		"when": "textInputFocus"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// move line up
-		"key": "ctrl+shift+i",
-		"command": "editor.action.moveLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		// move line down
-		"key": "ctrl+shift+k",
-		"command": "editor.action.moveLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// delete right
-		"key": "alt+backspace",
-		"command": "deleteRight",
-		"when": "textInputFocus"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// scroll down
-		"key": "ctrl+k",
-		"command": "scrollLineDown",
-		"when": "textInputFocus"
-	},
-	{
-		// scroll up
-		"key": "ctrl+i",
-		"command": "scrollLineUp",
-		"when": "textInputFocus"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// right select
-		"key": "shift+alt+l",
-		"command": "cursorRightSelect",
-		"when": "textInputFocus"
-	},
-	{
-		// left select
-		"key": "shift+alt+j",
-		"command": "cursorLeftSelect",
-		"when": "textInputFocus"
-	},
-	{
-		// up select
-		"key": "shift+alt+i",
-		"command": "cursorUpSelect",
-		"when": "editorTextFocus"
-	},
-	{
-		// down select
-		"key": "shift+alt+k",
-		"command": "cursorDownSelect",
-		"when": "editorTextFocus"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// copy line make new line
-		"key": "alt+n",
-		"command": "editor.action.copyLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	/////////////////////////////////////////////////////////////////////////////////////
-	{
-		// new line below
-		"key": "alt+m",
-		"command": "editor.action.insertLineAfter",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		// new line above
-		"key": "shift+alt+m",
-		"command": "editor.action.insertLineBefore",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		// delete left
-		"key": "alt+d",
-		"command": "deleteLeft",
-		"when": "textInputFocus"
-	},
-	{
-		// move to first
-		"key": "shift+alt+u",
-		"command": "cursorHomeSelect",
-		"when": "textInputFocus"
-	},
-	{
-		// move to end
-		"key": "shift+alt+o",
-		"command": "cursorEndSelect",
-		"when": "textInputFocus"
-	},
-	{
-		// move though words right
-		"key": "alt+0",
-		"command": "cursorWordEndRight",
-		"when": "textInputFocus"
-	},
-	{
-		// move though words left
-		"key": "alt+9",
-		"command": "cursorWordLeft",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+alt+,",
-		"command": "workbench.action.debug.run",
-		"when": "debuggersAvailable && debugState != 'initializing'"
-	}
+  // cursor move
+  {
+    // move down
+    "key": "alt+k",
+    "command": "cursorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    // move up
+    "key": "alt+i",
+    "command": "cursorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    // move right
+    "key": "alt+l",
+    "command": "cursorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    // move left
+    "key": "alt+j",
+    "command": "cursorLeft",
+    "when": "editorTextFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // jump to first of the line
+    "key": "alt+u",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    // jump to end of the line
+    "key": "alt+o",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // move line up
+    "key": "ctrl+shift+i",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // move line down
+    "key": "ctrl+shift+k",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // delete right
+    "key": "alt+backspace",
+    "command": "deleteRight",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // scroll down
+    "key": "ctrl+k",
+    "command": "scrollLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    // scroll up
+    "key": "ctrl+i",
+    "command": "scrollLineUp",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // right select
+    "key": "shift+alt+l",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // left select
+    "key": "shift+alt+j",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // up select
+    "key": "shift+alt+i",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    // down select
+    "key": "shift+alt+k",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // copy line make new line
+    "key": "alt+n",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // new line below
+    "key": "alt+m",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    // new line above
+    "key": "shift+alt+m",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // move to first with selection
+    "key": "shift+alt+u",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // move to end with selection
+    "key": "shift+alt+o",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // move through words right
+    "key": "alt+0",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    // move through words left
+    "key": "alt+9",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // select a right word
+    "key": "shift+alt+0",
+    "command": "cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    // select a left word
+    "key": "shift+alt+9",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // Select next suggestion
+    "key": "alt+k",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    // Select previous suggestion
+    "key": "alt+i",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen",
+  },
+  {
+    "key": "alt+i",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // Working as F5
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.debug.run",
+    "when": "debuggersAvailable && debugState != 'initializing'"
+  },
+  {
+    // Format document (or format code)
+    "key": "shift+alt+f",
+    "command": "editor.action.reindentlines"
+  },
+  {
+    // Format document (or format code)
+    "key": "shift+alt+f",
+    "command": "editor.action.reindentselectedlines"
+  },
+  {
+    // Format document (or format code)
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    // Format document (or format code)
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    // Format document (or format code)
+    "key": "shift+alt+f",
+    "command": "notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  {
+    // Show or hidden activity bar
+    "key": "alt+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    // Quick actions
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    // Relative goto
+    "key": "ctrl+alt+i",
+    "command": "relative-goto.goto"
+  },
+  {
+    // Create file in sidebar explorer
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+    // "when": "explorerViewletFocus"
+  },
+  {
+    // Eslint lint
+    "key": "shift+alt+d",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    // Clear unused imports
+    "key": "alt+q",
+    "command": "editor.action.organizeImports",
+    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+  },
+
 ]
